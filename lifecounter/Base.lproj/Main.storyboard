@@ -10,20 +10,28 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MainLayout-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lifecounter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MainLayout" id="BYZ-38-t0r" customClass="ViewController" customModule="lifecounter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XoZ-Ph-1IG">
-                                <rect key="frame" x="40" y="34" width="292" height="134"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XoZ-Ph-1IG">
+                                <rect key="frame" x="41.5" y="32" width="292" height="138"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ov-cg-qLg">
-                                        <rect key="frame" x="20" y="84" width="29" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ov-cg-qLg">
+                                        <rect key="frame" x="19.5" y="85" width="31" height="32"/>
+                                        <color key="backgroundColor" red="0.92156862745098034" green="0.94117647058823528" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <state key="normal" title="-5">
+                                            <color key="titleColor" red="1" green="0.11654281777984243" blue="0.08619475669746024" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4g-tC-YRL">
+                                        <rect key="frame" x="242.5" y="84.5" width="30" height="32"/>
                                         <color key="backgroundColor" red="0.92156862745098034" green="0.94117647058823528" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="+5">
@@ -31,31 +39,20 @@
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4g-tC-YRL">
-                                        <rect key="frame" x="243" y="84" width="29" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <color key="backgroundColor" red="0.92156862745098034" green="0.94117647058823528" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <state key="normal" title="+5">
-                                            <color key="titleColor" red="0.1031536282" green="1" blue="0.0248447116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdu-oO-i9C">
-                                        <rect key="frame" x="118" y="20" width="59" height="20"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gdu-oO-i9C">
+                                        <rect key="frame" x="118" y="22" width="59" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="20" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1aq-dQ-hfr">
-                                        <rect key="frame" x="123.5" y="83" width="48" height="31"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="20" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1aq-dQ-hfr">
+                                        <rect key="frame" x="123.5" y="85" width="48" height="31"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNe-k8-HLv">
-                                        <rect key="frame" x="197" y="84" width="29" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lNe-k8-HLv">
+                                        <rect key="frame" x="196.5" y="83" width="30" height="35"/>
                                         <color key="backgroundColor" red="0.92156862745098034" green="0.94117647058823528" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="+">
@@ -63,29 +60,41 @@
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFL-Ic-YaS">
-                                        <rect key="frame" x="67" y="84" width="29" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xFL-Ic-YaS">
+                                        <rect key="frame" x="66.5" y="83" width="31" height="35"/>
                                         <color key="backgroundColor" red="0.92156862745098034" green="0.94117647058823528" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="+">
-                                            <color key="titleColor" red="0.1031536282" green="1" blue="0.0248447116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" red="1" green="0.11654281777984243" blue="0.08619475669746024" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="g4g-tC-YRL" firstAttribute="centerX" secondItem="XoZ-Ph-1IG" secondAttribute="centerX" constant="111.5" id="0qc-og-KLP"/>
+                                    <constraint firstItem="3ov-cg-qLg" firstAttribute="centerX" secondItem="XoZ-Ph-1IG" secondAttribute="centerX" constant="-111" id="Brz-gn-UuJ"/>
+                                    <constraint firstItem="xFL-Ic-YaS" firstAttribute="centerY" secondItem="XoZ-Ph-1IG" secondAttribute="centerY" constant="31.5" id="Czn-FI-O0H"/>
+                                    <constraint firstItem="xFL-Ic-YaS" firstAttribute="width" secondItem="XoZ-Ph-1IG" secondAttribute="height" multiplier="30:133" id="E64-uq-sGZ"/>
+                                    <constraint firstItem="3ov-cg-qLg" firstAttribute="centerY" secondItem="XoZ-Ph-1IG" secondAttribute="centerY" constant="32" id="HMw-K4-Mmw"/>
+                                    <constraint firstItem="xFL-Ic-YaS" firstAttribute="centerX" secondItem="XoZ-Ph-1IG" secondAttribute="centerX" constant="-64" id="M1N-cu-eux"/>
+                                    <constraint firstItem="lNe-k8-HLv" firstAttribute="centerX" secondItem="XoZ-Ph-1IG" secondAttribute="centerX" constant="65.5" id="Q1l-pc-eAn"/>
                                     <constraint firstItem="1aq-dQ-hfr" firstAttribute="centerX" secondItem="XoZ-Ph-1IG" secondAttribute="centerX" constant="1.5" id="QJr-y7-W0K"/>
+                                    <constraint firstItem="g4g-tC-YRL" firstAttribute="centerY" secondItem="XoZ-Ph-1IG" secondAttribute="centerY" constant="31.5" id="U5f-We-Vlx"/>
                                     <constraint firstItem="Gdu-oO-i9C" firstAttribute="centerX" secondItem="XoZ-Ph-1IG" secondAttribute="centerX" constant="1.5" id="axz-nK-Ngd"/>
+                                    <constraint firstItem="3ov-cg-qLg" firstAttribute="width" secondItem="XoZ-Ph-1IG" secondAttribute="height" multiplier="30:133" id="bCY-vf-sQ4"/>
+                                    <constraint firstItem="lNe-k8-HLv" firstAttribute="centerY" secondItem="XoZ-Ph-1IG" secondAttribute="centerY" constant="31.5" id="iXw-HI-SKx"/>
+                                    <constraint firstItem="lNe-k8-HLv" firstAttribute="width" secondItem="XoZ-Ph-1IG" secondAttribute="height" multiplier="29:133" id="kjr-qb-3qu"/>
+                                    <constraint firstItem="g4g-tC-YRL" firstAttribute="width" secondItem="XoZ-Ph-1IG" secondAttribute="height" multiplier="29:133" id="mAB-TV-G2y"/>
+                                    <constraint firstItem="1aq-dQ-hfr" firstAttribute="centerY" secondItem="XoZ-Ph-1IG" secondAttribute="centerY" constant="31.5" id="nb3-Wl-ISB"/>
+                                    <constraint firstItem="Gdu-oO-i9C" firstAttribute="centerY" secondItem="XoZ-Ph-1IG" secondAttribute="centerY" constant="-37" id="rbG-hP-Nn3"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jbd-Sn-Sqe">
-                                <rect key="frame" x="40" y="181.5" width="292" height="135.5"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jbd-Sn-Sqe">
+                                <rect key="frame" x="41.5" y="180.5" width="292" height="137.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8l-hN-4SA">
-                                        <rect key="frame" x="197" y="87" width="29" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8l-hN-4SA">
+                                        <rect key="frame" x="196.5" y="86" width="30" height="35"/>
                                         <color key="backgroundColor" red="0.93333333333333335" green="0.95294117647058818" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="+">
@@ -93,19 +102,17 @@
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsE-j6-qvc">
-                                        <rect key="frame" x="67" y="87" width="29" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsE-j6-qvc">
+                                        <rect key="frame" x="66.5" y="86" width="30" height="35"/>
                                         <color key="backgroundColor" red="0.93333333333333335" green="0.95294117647058818" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="+">
-                                            <color key="titleColor" red="0.1031536282" green="1" blue="0.0248447116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="1" green="0.097115890415144901" blue="0.086971353507695359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fm-TU-Qik">
-                                        <rect key="frame" x="243" y="87" width="29" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fm-TU-Qik">
+                                        <rect key="frame" x="242.5" y="87.5" width="30" height="32"/>
                                         <color key="backgroundColor" red="0.93333333333333335" green="0.95294117647058818" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="+5">
@@ -113,41 +120,53 @@
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="20" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="btt-AF-0km">
-                                        <rect key="frame" x="123.5" y="84" width="48" height="31"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="20" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="btt-AF-0km">
+                                        <rect key="frame" x="123.5" y="85" width="48" height="31"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Player 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgp-I1-ReK">
-                                        <rect key="frame" x="117" y="20" width="62" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgp-I1-ReK">
+                                        <rect key="frame" x="116.5" y="21" width="62" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFe-IN-bU4">
-                                        <rect key="frame" x="20" y="87" width="29" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFe-IN-bU4">
+                                        <rect key="frame" x="19.5" y="87.5" width="31" height="32"/>
                                         <color key="backgroundColor" red="0.93333333333333335" green="0.95294117647058818" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <state key="normal" title="+5">
-                                            <color key="titleColor" red="0.1031536282" green="1" blue="0.0248447116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="-5">
+                                            <color key="titleColor" red="1" green="0.097115890415144901" blue="0.086971353507695359" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="iFe-IN-bU4" firstAttribute="centerY" secondItem="Jbd-Sn-Sqe" secondAttribute="centerY" constant="34.75" id="2xh-as-o46"/>
+                                    <constraint firstItem="3fm-TU-Qik" firstAttribute="centerX" secondItem="Jbd-Sn-Sqe" secondAttribute="centerX" constant="111.5" id="7lx-QH-fyy"/>
+                                    <constraint firstItem="3fm-TU-Qik" firstAttribute="width" secondItem="Jbd-Sn-Sqe" secondAttribute="height" multiplier="29:133" id="Een-zV-k7y"/>
+                                    <constraint firstItem="W8l-hN-4SA" firstAttribute="centerY" secondItem="Jbd-Sn-Sqe" secondAttribute="centerY" constant="34.75" id="JGg-4Y-z6t"/>
+                                    <constraint firstItem="gsE-j6-qvc" firstAttribute="centerY" secondItem="Jbd-Sn-Sqe" secondAttribute="centerY" constant="34.75" id="Oiq-vg-oYp"/>
+                                    <constraint firstItem="3fm-TU-Qik" firstAttribute="centerY" secondItem="Jbd-Sn-Sqe" secondAttribute="centerY" constant="34.75" id="Qdm-9R-kF6"/>
+                                    <constraint firstItem="iFe-IN-bU4" firstAttribute="centerX" secondItem="Jbd-Sn-Sqe" secondAttribute="centerX" constant="-111" id="Tt6-Xf-E5s"/>
+                                    <constraint firstItem="W8l-hN-4SA" firstAttribute="centerX" secondItem="Jbd-Sn-Sqe" secondAttribute="centerX" constant="65.5" id="ZcU-wD-a6I"/>
+                                    <constraint firstItem="qgp-I1-ReK" firstAttribute="centerY" secondItem="Jbd-Sn-Sqe" secondAttribute="centerY" constant="-37.25" id="ac6-1U-aYL"/>
                                     <constraint firstItem="btt-AF-0km" firstAttribute="centerX" secondItem="Jbd-Sn-Sqe" secondAttribute="centerX" constant="1.5" id="bsw-Pd-Mtl"/>
+                                    <constraint firstItem="W8l-hN-4SA" firstAttribute="width" secondItem="Jbd-Sn-Sqe" secondAttribute="height" multiplier="29:133" id="c97-pg-8jO"/>
+                                    <constraint firstItem="gsE-j6-qvc" firstAttribute="centerX" secondItem="Jbd-Sn-Sqe" secondAttribute="centerX" constant="-64.5" id="cRI-rC-yIf"/>
+                                    <constraint firstItem="gsE-j6-qvc" firstAttribute="width" secondItem="Jbd-Sn-Sqe" secondAttribute="height" multiplier="29:133" id="hs3-pR-mrw"/>
+                                    <constraint firstItem="btt-AF-0km" firstAttribute="centerY" secondItem="Jbd-Sn-Sqe" secondAttribute="centerY" constant="31.75" id="mAl-ae-mi6"/>
                                     <constraint firstItem="qgp-I1-ReK" firstAttribute="centerX" secondItem="Jbd-Sn-Sqe" secondAttribute="centerX" constant="1.5" id="yuX-ZP-tG8"/>
+                                    <constraint firstItem="iFe-IN-bU4" firstAttribute="width" secondItem="Jbd-Sn-Sqe" secondAttribute="height" multiplier="30:133" id="zht-Wi-UKG"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sMm-O8-PvK">
-                                <rect key="frame" x="40" y="329.5" width="292" height="135"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMm-O8-PvK">
+                                <rect key="frame" x="41.5" y="328" width="292" height="138"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Lm-q0-eYB">
-                                        <rect key="frame" x="243" y="85" width="29" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Lm-q0-eYB">
+                                        <rect key="frame" x="242.5" y="85.5" width="30" height="32"/>
                                         <color key="backgroundColor" red="0.92941176470588238" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="+5">
@@ -155,9 +174,8 @@
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thh-Bu-ibw">
-                                        <rect key="frame" x="197" y="85" width="29" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thh-Bu-ibw">
+                                        <rect key="frame" x="196.5" y="83.5" width="30" height="35"/>
                                         <color key="backgroundColor" red="0.92941176470588238" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="+">
@@ -165,35 +183,33 @@
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="20" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="76C-oZ-1Cm">
-                                        <rect key="frame" x="123.5" y="84" width="48" height="31"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="20" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="76C-oZ-1Cm">
+                                        <rect key="frame" x="123.5" y="85.5" width="48" height="31"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yw-vK-A0r">
-                                        <rect key="frame" x="67" y="85" width="29" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4yw-vK-A0r">
+                                        <rect key="frame" x="66.5" y="83.5" width="31" height="35"/>
                                         <color key="backgroundColor" red="0.92941176470588238" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="+">
-                                            <color key="titleColor" red="0.1031536282" green="1" blue="0.0248447116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" red="0.792156862745098" green="0.098039215686274508" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Player 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcC-dn-lA7">
-                                        <rect key="frame" x="117" y="20" width="62" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcC-dn-lA7">
+                                        <rect key="frame" x="116.5" y="21.5" width="62" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXF-mK-hIs">
-                                        <rect key="frame" x="20" y="85" width="29" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXF-mK-hIs">
+                                        <rect key="frame" x="19.5" y="85" width="31" height="32"/>
                                         <color key="backgroundColor" red="0.92941176470588238" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <state key="normal" title="+5">
-                                            <color key="titleColor" red="0.1031536282" green="1" blue="0.0248447116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="-5">
+                                            <color key="titleColor" red="0.792156862745098" green="0.098039215686274508" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
@@ -201,15 +217,28 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="76C-oZ-1Cm" firstAttribute="centerX" secondItem="sMm-O8-PvK" secondAttribute="centerX" constant="1.5" id="0uv-rl-CEu"/>
+                                    <constraint firstItem="aXF-mK-hIs" firstAttribute="centerY" secondItem="sMm-O8-PvK" secondAttribute="centerY" constant="32" id="8He-4A-NGo"/>
+                                    <constraint firstItem="4Lm-q0-eYB" firstAttribute="centerX" secondItem="sMm-O8-PvK" secondAttribute="centerX" constant="111.5" id="8OG-Yd-v9Y"/>
+                                    <constraint firstItem="aXF-mK-hIs" firstAttribute="centerX" secondItem="sMm-O8-PvK" secondAttribute="centerX" constant="-111" id="9U3-w1-28h"/>
+                                    <constraint firstItem="xcC-dn-lA7" firstAttribute="centerY" secondItem="sMm-O8-PvK" secondAttribute="centerY" constant="-37" id="E7N-Ec-wbw"/>
+                                    <constraint firstItem="Thh-Bu-ibw" firstAttribute="centerY" secondItem="sMm-O8-PvK" secondAttribute="centerY" constant="32" id="EIh-IA-sg8"/>
+                                    <constraint firstItem="4yw-vK-A0r" firstAttribute="centerY" secondItem="sMm-O8-PvK" secondAttribute="centerY" constant="32" id="Evt-P9-Hdn"/>
+                                    <constraint firstItem="Thh-Bu-ibw" firstAttribute="centerX" secondItem="sMm-O8-PvK" secondAttribute="centerX" constant="65.5" id="JFS-PA-EdK"/>
+                                    <constraint firstItem="4Lm-q0-eYB" firstAttribute="centerY" secondItem="sMm-O8-PvK" secondAttribute="centerY" constant="32.5" id="QIt-2V-pfV"/>
+                                    <constraint firstItem="aXF-mK-hIs" firstAttribute="width" secondItem="sMm-O8-PvK" secondAttribute="height" multiplier="30:133" id="TYj-JX-fKz"/>
+                                    <constraint firstItem="4yw-vK-A0r" firstAttribute="centerX" secondItem="sMm-O8-PvK" secondAttribute="centerX" constant="-64" id="X2I-oB-6Rd"/>
+                                    <constraint firstItem="4yw-vK-A0r" firstAttribute="width" secondItem="sMm-O8-PvK" secondAttribute="height" multiplier="30:133" id="gah-ZC-cMa"/>
+                                    <constraint firstItem="Thh-Bu-ibw" firstAttribute="width" secondItem="sMm-O8-PvK" secondAttribute="height" multiplier="29:133" id="iNX-dW-b1b"/>
+                                    <constraint firstItem="4Lm-q0-eYB" firstAttribute="width" secondItem="sMm-O8-PvK" secondAttribute="height" multiplier="29:133" id="l7B-bz-TBm"/>
                                     <constraint firstItem="xcC-dn-lA7" firstAttribute="centerX" secondItem="sMm-O8-PvK" secondAttribute="centerX" constant="1.5" id="lqt-fl-MMC"/>
+                                    <constraint firstItem="76C-oZ-1Cm" firstAttribute="centerY" secondItem="sMm-O8-PvK" secondAttribute="centerY" constant="32" id="oZW-rP-zN6"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="035-h3-b7Y">
-                                <rect key="frame" x="40" y="479" width="292" height="134"/>
+                                <rect key="frame" x="41.5" y="477" width="292" height="138"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ip-kA-HD7">
-                                        <rect key="frame" x="243" y="83" width="29" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ip-kA-HD7">
+                                        <rect key="frame" x="242.5" y="84.5" width="30" height="32"/>
                                         <color key="backgroundColor" red="0.92941176470588238" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="+5">
@@ -217,41 +246,38 @@
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVt-rq-Tmw">
-                                        <rect key="frame" x="67" y="84" width="29" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVt-rq-Tmw">
+                                        <rect key="frame" x="66.5" y="83" width="31" height="35"/>
                                         <color key="backgroundColor" red="0.92941176470588238" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                        <state key="normal" title="+">
-                                            <color key="titleColor" red="0.1031536282" green="1" blue="0.0248447116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="-">
+                                            <color key="titleColor" red="0.792156862745098" green="0.098039215686274508" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Player 4" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ye8-Pi-Djn">
-                                        <rect key="frame" x="117" y="20" width="62" height="21"/>
+                                        <rect key="frame" x="116.5" y="22" width="62" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="20" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bme-Vn-DD0">
-                                        <rect key="frame" x="123.5" y="83" width="48" height="31"/>
+                                        <rect key="frame" x="123.5" y="85" width="48" height="31"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Roi-1c-g6G">
-                                        <rect key="frame" x="20" y="84" width="29" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Roi-1c-g6G">
+                                        <rect key="frame" x="19.5" y="84.5" width="31" height="32"/>
                                         <color key="backgroundColor" red="0.92941176470588238" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                        <state key="normal" title="+5">
-                                            <color key="titleColor" red="0.1031536282" green="1" blue="0.0248447116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="-5">
+                                            <color key="titleColor" red="0.792156862745098" green="0.098039215686274508" blue="0.11764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2J-JP-x1g">
-                                        <rect key="frame" x="197" y="83" width="29" height="29"/>
-                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2J-JP-x1g">
+                                        <rect key="frame" x="196.5" y="83" width="30" height="35"/>
                                         <color key="backgroundColor" red="0.92941176470588238" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="+">
@@ -262,17 +288,41 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="6ip-kA-HD7" firstAttribute="centerY" secondItem="035-h3-b7Y" secondAttribute="centerY" constant="31.5" id="4QO-Ua-V2g"/>
+                                    <constraint firstItem="Roi-1c-g6G" firstAttribute="centerX" secondItem="035-h3-b7Y" secondAttribute="centerX" constant="-111" id="7hr-wa-XG7"/>
+                                    <constraint firstItem="O2J-JP-x1g" firstAttribute="centerX" secondItem="035-h3-b7Y" secondAttribute="centerX" constant="65.5" id="Dpa-DN-tt4"/>
+                                    <constraint firstItem="6ip-kA-HD7" firstAttribute="width" secondItem="035-h3-b7Y" secondAttribute="height" multiplier="29:133" id="JFc-XC-LEi"/>
+                                    <constraint firstItem="Roi-1c-g6G" firstAttribute="centerY" secondItem="035-h3-b7Y" secondAttribute="centerY" constant="31.5" id="JjX-Fk-fjH"/>
+                                    <constraint firstItem="O2J-JP-x1g" firstAttribute="width" secondItem="035-h3-b7Y" secondAttribute="height" multiplier="29:133" id="K4b-WE-Rb8"/>
+                                    <constraint firstItem="LVt-rq-Tmw" firstAttribute="centerX" secondItem="035-h3-b7Y" secondAttribute="centerX" constant="-64" id="OHQ-y6-AF9"/>
+                                    <constraint firstItem="LVt-rq-Tmw" firstAttribute="centerY" secondItem="035-h3-b7Y" secondAttribute="centerY" constant="31.5" id="PUR-P0-tk4"/>
+                                    <constraint firstItem="6ip-kA-HD7" firstAttribute="centerX" secondItem="035-h3-b7Y" secondAttribute="centerX" constant="111.5" id="ZEy-kv-7AC"/>
+                                    <constraint firstItem="O2J-JP-x1g" firstAttribute="centerY" secondItem="035-h3-b7Y" secondAttribute="centerY" constant="31.5" id="d6v-Xq-B1o"/>
+                                    <constraint firstItem="Roi-1c-g6G" firstAttribute="width" secondItem="035-h3-b7Y" secondAttribute="height" multiplier="30:133" id="dX4-lk-ySq"/>
+                                    <constraint firstItem="LVt-rq-Tmw" firstAttribute="width" secondItem="035-h3-b7Y" secondAttribute="height" multiplier="30:133" id="esj-Nv-OYJ"/>
+                                    <constraint firstItem="ye8-Pi-Djn" firstAttribute="centerY" secondItem="035-h3-b7Y" secondAttribute="centerY" constant="-36.5" id="gRY-zu-Mo2"/>
+                                    <constraint firstItem="Bme-Vn-DD0" firstAttribute="centerY" secondItem="035-h3-b7Y" secondAttribute="centerY" constant="31.5" id="mN2-HL-FrS"/>
                                     <constraint firstItem="Bme-Vn-DD0" firstAttribute="centerX" secondItem="035-h3-b7Y" secondAttribute="centerX" constant="1.5" id="nvF-fd-GRi"/>
                                     <constraint firstItem="ye8-Pi-Djn" firstAttribute="centerX" secondItem="035-h3-b7Y" secondAttribute="centerX" constant="1.5" id="wCA-Tk-7qH"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Jbd-Sn-Sqe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1UX-6v-I47"/>
+                            <constraint firstItem="035-h3-b7Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="30N-sR-J6P"/>
+                            <constraint firstItem="Jbd-Sn-Sqe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-84.25" id="44P-4i-odH"/>
+                            <constraint firstItem="XoZ-Ph-1IG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="292:667" id="6PB-E1-9zo"/>
+                            <constraint firstItem="XoZ-Ph-1IG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CJk-fc-vY8"/>
+                            <constraint firstItem="XoZ-Ph-1IG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-232.5" id="CkH-eo-UtF"/>
+                            <constraint firstItem="sMm-O8-PvK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="63.5" id="UKO-U7-6cC"/>
+                            <constraint firstItem="sMm-O8-PvK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="akF-6f-RVK"/>
+                            <constraint firstItem="sMm-O8-PvK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="292:667" id="eHC-l2-1j5"/>
+                            <constraint firstItem="Jbd-Sn-Sqe" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="292:667" id="o9T-X9-Hxb"/>
+                            <constraint firstItem="035-h3-b7Y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="212.5" id="pOw-Kn-kHl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <keyCommands>
-                        <keyCommand/>
-                    </keyCommands>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
